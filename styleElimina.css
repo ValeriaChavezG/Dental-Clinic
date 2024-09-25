@@ -1,0 +1,104 @@
+.TablaUsuario{
+    margin: auto;
+}
+.ContenidoTabla{
+    flex-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+.TituloTabla{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.TituloTabla h2{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.tablaEncabezado{
+    color: rgb(0, 87, 87);
+    background-color: rgb(0, 0, 0); 
+}
+ 
+table.Tabla{
+    border: 1px solid #ccc;
+    width: 100%;
+    margin:0;
+    padding:0;
+    border-collapse: collapse;
+    border-spacing: 0; 
+}
+table.Tabla tr 
+{
+    border: 1px solid #ddd;
+    padding: 5px; 
+}
+table.Tabla th, 
+table 
+td { 
+    padding: 10px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+table.Tabla th
+{
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+table.Tabla td
+{
+    font-size: 13px;
+}
+#botonEliminar{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 1rem;
+    background: transparent;
+    transition: all 0.6s;
+    font-size: 11px;
+    padding: 5px;
+    text-decoration:none;
+    border: 2px solid rgb(107, 107, 107);
+}
+#botonEliminar:hover{
+    background-color: rgb(3, 133, 156);
+    box-shadow: 0 0 10px #189dbe, 0 0 20px #189dbe, 0 0 60px #189dbe;
+}
+/* Responsivo */
+
+@media screen and (max-width: 750px) {
+    table.Tabla 
+    {
+        border: 0;
+    }
+    table.Tabla thead {
+        display: none;
+    }
+    table.Tabla tr {
+        margin-bottom: 10px;
+        display: block;
+        border-bottom: 2px solid #ddd;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    }
+    table.Tabla td {
+        display: block;
+        text-align: right;
+        font-size: 13px;
+        border-bottom: 1px dotted #ccc;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    }
+    table.Tabla td:last-child { 
+        border-bottom: 0;
+    }
+    table.Tabla td:before {
+        content: attr(data-label);
+        float: left;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+  }

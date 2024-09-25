@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Give You Glory', cursive;
+    list-style: none;
+    text-decoration: none;
+}
+
+.Contenedor{
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Superior */
+body{
+    background-color: white;
+}
+header{
+    margin: auto;
+    display: flex;
+    padding-top: 100px;
+    height: 100px;
+    padding: 0 50px;
+    justify-content: space-between;
+    align-items:center;
+    background-color: rgb(39, 212, 243);
+    overflow: hidden;
+}
+.logoG{
+    display: flex;
+}
+#imagenPaso{
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 0 0 40% 40%;
+}
+.logo{
+    font-size: 40px;
+    font-weight: 900;
+    cursor: pointer;
+    color: rgba(52, 92, 124, 0.979);
+}
+.menu{
+    display: flex;
+}
+.menu li a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.menu a{
+    color:black;
+    margin-left: 45px;
+    font-size: 17px;
+    font-weight: 300;
+    border-bottom: 2px solid transparent;
+    transition: all 1.5s ease;
+}
+.menuvertical{
+    position: absolute;
+    z-index: 1;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgb(39, 212, 243);
+}
+.menu li:hover .menuvertical{
+    display: block;
+}
+.menuvertical li:hover{
+    background-color: #ffffff;
+}
+.menuvertical li a{
+    display: block;
+    color: #000;
+    padding: 10px;
+    /* background-color: rgb(39, 212, 243); */
+}
+.letraTrata{
+    cursor: pointer;  
+}
+.mostrarMenu,
+.esconderMenu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: .3s;
+}
+.mostrarMenu{
+    order: 1;
+}
+.menu a:hover,
+.mostrarMenu:hover,
+.esconderMenu:hover{
+    border-bottom: 4px solid white;
+}
+#check{
+    display: none;
+}
+
+/* Presentacion */
+.presentacion{
+    padding: 0;
+    order:2;
+}
+.imagenPresentacion{
+    width: 100%;
+    height: 84vh;
+    background-image: url(./imagenes/sonrisaaaa.png);
+    background-size: 100% 84vh;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+.eslogan{
+    margin: auto;
+    padding: 20px;
+    padding-top: 70px;
+    padding-bottom: 0px;
+    border:1px solid white;
+    box-shadow: 0 10px 15px #000;
+    text-align:left;
+    width: 400px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 2rem;
+    height: 200px;
+}
+#efecto{
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    background-color: rgba(243,243,243,0.2);
+}
+.letraEslogan{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: unset;
+    font-stretch:ultra-expanded;
+    flex-wrap: wrap;
+}
+.botonsession{
+    text-decoration: none;
+    margin-left: 10px;
+    background: transparent;
+    transition: all 0.6s;
+    padding: 10px 10px; 
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 4rem;
+}
+#letraBotonSesion{
+    font-weight:200;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+.botonCita{
+    text-decoration: none;
+    margin: 30px;
+    background: transparent;
+    transition: all 0.6s;
+    padding: 10px 10px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 1rem;
+}
+#letraBotonCita{
+    font-weight:900;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+.botonCita:hover{
+    background: cadetblue;
+}
+
+@media(max-width:768px){
+    .mostrarMenu,
+    .esconderMenu{
+        display: block;
+    }
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color:rgb(51, 167, 167);
+        right: -100%;
+        top:0;
+        text-align: start;
+        flex-direction: column;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+    .menuvertical{
+        position: relative;
+        width: 100%;
+        background-color:rgb(51, 167, 167);
+        text-align: center;
+        flex-direction: column;
+        z-index: 100;
+        transition: 0.8s;
+    }
+    .menu a:hover,
+    .menuvertical a:hover,
+    .mostrarMenu:hover,
+    .esconderMenu:hover{
+    border-bottom: 4px solid white;
+    }
+    .menu a{
+        left: 100px;
+        flex-direction: column;
+        display:block;
+        color:black;
+        font-size: 17px;
+        font-weight: 300;
+        border-bottom: 2px solid transparent;
+        transition: all 1.5s ease;
+    }
+    .esconderMenu{
+        font-family: 'Times New Roman', Times, serif;
+        position: absolute;
+        top:40px;
+        right: 40px;
+    }
+    #check:checked ~ .menu{
+        right: 0%;
+    }
+}
+/* footer */
+ .footer{
+    position: relative;
+    /* width: 90%;  */
+    height: auto;
+    padding: 50px 100px;
+    background:rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+} 
+.contenedorFooter{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.nosotrosFooter{
+    margin-right: 30px;
+    width: 40%;
+}
+.tituloInfo{
+    position: relative;
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.tituloInfo:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background:#189dbe;
+}
+.parrafoInfo{
+    font-family: 'Courier New', Courier, monospace;
+    color:#afafaf;
+    text-align: start;
+} 
+.listaRedes{
+    margin-top: 20px;
+    display: flex;
+}
+.listaRl{
+    list-style: none;
+}
+#R1{
+    color: white;
+    font-size: 15px;
+}
+.listaR{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 30%;
+    background-color:#000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.listaR:hover{
+    background:#189dbe;
+    height: 35px;
+    width: 35px;
+}
+
+.tituloDire{
+    position: relative;
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.contactoFooter{
+    margin-right: 30px;
+    width: 40%;
+}
+.tituloDire:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background:#189dbe;
+}
+.direccion{
+    position: relative;
+}
+.listaContact{
+    display: flex;
+    margin-bottom: 16px;
+}
+.infoCon{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 15px;
+    margin-right: 10px;
+}
+/* ContenedorUltimo */
+.contenedorDerechos{
+    text-align: center;
+    color: #ffffff;
+    padding: 10px;
+    background: #0a0a0a;
+
+}
+.letraDerechos{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+}
+@media (max-width: 991px) {
+    .footer
+    {
+        margin-top: 10px;
+        padding: 40px;
+    }
+    .contenedorFooter
+    {
+       flex-direction: column; 
+    }
+    .nosotrosFooter
+    {
+        margin-right: 0;
+        margin-bottom: 40px;
+        width: 100%;
+    }
+    .contactoFooter{
+        margin-right: 0;
+        margin-bottom: 40px;
+        width: 100%;
+    }
+    .contenedorDerechos{
+        padding: 15px;
+    }
+}

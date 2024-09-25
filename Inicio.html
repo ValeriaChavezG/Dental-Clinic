@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="styleInicio.css" rel="stylesheet" type="text/css" />
+
+    <!-- Para los iconos -->
+    <link rel="stylesheet"
+     href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Para estilo de la letra -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Give+You+Glory&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="Contenedor">
+        <header>
+            <div class="logoG">
+                <h1 class="logo">Smylife</h1>
+                <img id="imagenPaso" src="imagenes/logo-removebg-preview.png" alt="">
+            </div>
+            <!-- <h1 class="logo">Smylife</h1> -->
+            <input type="checkbox" id="check"> 
+            <label for="check" class="mostrarMenu">&#8801</label>
+            <ul class="menu">
+                <li><a href="./Inicio.html">Inicio</a></li>
+                <li><a href="./SobreNosotros.html">Sobre nosotros</a></li>
+                <li>
+                    <a class="letraTrata">Tratamientos</a>
+                    <ul class="menuvertical">
+                        <li><a href="./blanqueamiento.html">Blanqueamiento</a></li>
+                        <li><a href="./brackets.html">Brackets</a></li>
+                        <li><a href="./endodoncia.html">Endodoncia</a></li>
+                        <li><a href="./implantes.html">Implantes</a></li>
+                        <li><a href="./periodoncia.html">Periodoncia</a></li>
+                        <li><a href="./prevencion.html">Prevención</a></li>
+                    </ul>
+                </li>
+                <li><a href="./Galeria.html">Galería</a></li>
+                <li><a href="./Cita.php">Haz tu cita</a></li>
+                <li><a href="./Registrate.php">Registrate</a></li>
+                <!-- <button class="botonsession">
+                    <a id="letraBotonSesion">Cerrar Sesion</a>
+                </button> -->
+                <label for="check" class="esconderMenu">&#215</label> 
+            </ul>
+        </header>
+        <section class="presentacion">
+            <div class="imagenPresentacion">
+                <div class="eslogan" id="efecto">
+                    <h1 class="letraEslogan">Una gran sonrisa empieza por un gran dentista</h1>
+                    <button class="botonCita">
+                        <a id="letraBotonCita"href="./Cita.php">Reservar una cita</a>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="pasos">
+                <h5 class="letraPequeñaPasos">FÁCIL, PROFESIONAL Y CON CUIDADO</h5>
+                <h2 class="tituloPasos">4 pasos fáciles para ti</h2>
+                <div class="contenedorImagenesPasos">
+                    <div class="paso" id="paso1">
+                        <img id="imagenPaso"src="imagenes/contactanos.png" alt="">
+                        <h1 class="tituloPaso">Contactanos</h1>
+                        <p class="parrafoPaso">Sabemos que somos la mejor, conócenos y quita tus dudas</p>
+                    </div>
+                    <div class="paso" id="paso2">
+                        <img id="imagenPaso" src="imagenes/platicanos.png" alt="">
+                        <h1 class="tituloPaso">Platícanos</h1>
+                        <p class="parrafoPaso">Te hacemos algunas preguntas para saber la mejor solución</p>
+                    </div>
+                    <div class="paso" id="paso3">
+                        <img id="imagenPaso" src="imagenes/agenda.png" alt="">
+                        <h1 class="tituloPaso">Agenda</h1>
+                        <p class="parrafoPaso">Programamos tu valoración SIN COSTO</p>
+                    </div>
+                    <div class="paso" id="paso4">
+                        <img id="imagenPaso"src="imagenes/solucion.png" alt="">
+                        <h1 class="tituloPaso">Solución</h1>
+                        <p class="parrafoPaso">Te damos un gran precio y plazos hasta de 12 meses para tu tratamiento</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="nosotros">
+                <h1 class="tituloNosotros">Nosotros</h1>
+                <p id="parrafoNosotros">Desde el 2015 en Smylife México nos hemos caracterizado por brindar servicios personalizados hacia todos nuestros pacientes, 
+                contando, además, con una excelente ubicación en Parque Kent #136 Colinas del Parque en la ciudad de San Luis Potosí, S.L.P.
+                En Smylife contamos con algunos de los mejores especialistas de la ciudad, además de facilidades de pago y planes financiados.
+                </p>
+                <div class="contenedorImagenesDoctores">
+                    <div class="doctor">
+                        <img id="imagenDoctor"src="imagenes/dentista1.png" alt="">
+                    </div>
+                    <div class="doctor">
+                        <img id="imagenDoctor" src="imagenes/dentista2.png" alt="">
+                    </div>
+                    <div class="doctor">
+                        <img id="imagenDoctor" src="imagenes/dentista3.png" alt="">
+                    </div>
+                    <div class="doctor">
+                        <img id="imagenDoctor"src="imagenes/dentista4.png" alt="">
+                    </div>
+                </div>
+                <div class="contenedorBotonNosotros">
+                    <div>
+                        <button class="contenedorBotonNosotros2">
+                            <a id="letrabotonNosotros"href="./SobreNosotros.html">Nuestra formacion y experiencia</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="Tratamientos">
+                <h1 class="tituloTratamientos">Nuestros servicios</h1>
+                <div class="tratamientos1">
+                    <div class="t1">
+                        <img id="imagent1"src="imagenes/blanqueamiento.png" alt="">
+                        <h1 class="tituloTratamientos1">Blanqueamiento</h1>
+                        <p class="parrafosTratamientos"> Tratamiento de estética dental que se aplica a los dientes oscurecidos, 
+                            por la pérdida de la capa de esmalte.
+                        </p>
+                        <button class="botonTratamientos">
+                            <a id="letrabotonTratamientos"href="./blanqueamiento.html">Más info</a>
+                        </button>
+                    </div>
+                    <div class="t1">
+                        <img id="imagent1"src="imagenes/bracket.png" alt="">
+                        <h1 class="tituloTratamientos1">Brackets</h1>
+                        <p class="parrafosTratamientos"> Aparatos fijos que se utilizan  para corregir los defectos 
+                            en la forma, posición, relación y función de los dientes y los maxilares, la cara 
+                            y los trastornos funcionales de la masticación.
+                        </p>
+                        <button class="botonTratamientos">
+                            <a id="letrabotonTratamientos"href="./brackets.html">Más info</a>
+                        </button>
+                    </div>
+                    <div class="t1">
+                        <img id="imagent1"src="imagenes/endodoncia.png" alt="">
+                        <h1 class="tituloTratamientos1">Endodoncia</h1>
+                        <p class="parrafosTratamientos">Procedimiento que tiene como finalidad preservar las piezas dentales dañadas
+                            evitando así su pérdida.
+                        </p>
+                        <button class="botonTratamientos">
+                            <a id="letrabotonTratamientos"href="./endodoncia.html">Más info</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="tratamientos2">
+                    <div class="t2">
+                        <img id="imagent2"src="imagenes/implante.png" alt="">
+                        <h1 class="tituloTratamientos1">Implante</h1>
+                        <p class="parrafosTratamientos">Dispositivo de metal que se coloca mediante cirugía en el hueso de la mandíbula.
+                            Actúa como un ancla para fijar uno o más dientes postizos.
+                        </p>
+                        <button class="botonTratamientos">
+                            <a id="letrabotonTratamientos"href="./implantes.html">Más info</a>
+                        </button>
+                    </div>
+                    <div class="t2">
+                        <img id="imagent2" src="imagenes/periodoncia.png" alt="">
+                        <h1 class="tituloTratamientos1">Periodoncia</h1>
+                        <p class="parrafosTratamientos">Estudio, prevención y tratamiento de aquellas patologías que afectan a los 
+                            tejidos que protegen, rodean y sujetan los dientes
+                        </p>
+                        <button class="botonTratamientos">
+                            <a id="letrabotonTratamientos"href="./periodoncia.html">Más info</a>
+                        </button>
+                    </div>
+                    <div class="t2">
+                        <img id="imagent2" src="imagenes/prevencion.png" alt="">
+                        <h1 class="tituloTratamientos1">Prevención</h1>
+                        <p class="parrafosTratamientos">Cuidado dental que ayuda a mantener una buena salud oral. 
+                            Una combinación de chequeos dentales regulares y el desarrollo de buenos hábitos.
+                        </p>
+                        <button class="botonTratamientos">
+                            <a id="letrabotonTratamientos"href="./prevencion.html">Más info</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="Clinica">
+                <div class="contenedor1Clinica">
+                    <h1 class="tituloClinica">Clinica dental Smylife</h1>
+                    <p class="letraClinica">Bienvenido a la odontología en un ambiente único</p>
+                    <div class="botonClinica1">
+                        <div>
+                            <button class="botonClinica2">
+                                <a id="letrabotonClinica"href="./Galeria.html">CONOCE LA CLÍNICA</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="contenedor2Clinica">
+                    <img id="imagenClinica" src="imagenes/dental1-removebg-preview.png" alt="">
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="contenedorFooter">
+                <div class="nosotrosFooter">
+                    <h3 class="tituloInfo">Sobre nosotros</h3>
+                    <p class="parrafoInfo">Elige el día y horario de atención que prefieras. Programa ahora. 
+                        Especialista recomendado por pacientes. Consulte los servicios y reseñas de mi perfil.
+                    </p>
+                    <ul class="listaRedes">
+                        <li class="listaRl"><a class="listaR" id="R1" href="#"><i class="ri-facebook-fill"></i></i></a></li>
+                        <li class="listaRl"><a class="listaR" id="R1" href="#"><i class="ri-instagram-fill"></i></a></li>
+                        <li class="listaRl"><a class="listaR" id="R1" href="#"><i class="ri-twitter-fill"></i></a></li>
+                    </ul>
+                </div>
+                <div class="contactoFooter">
+                    <h2 class="tituloDire">Dirección y contacto</h2>
+                    <ul class="direccion">
+                        <li class="listaContact">
+                            <span class="infoCon"><i class="ri-map-pin-line"></i></span>
+                            <span class="infoCon">Parque Kent 136, Colinas del Parque 78294 San Luis Potosí, S.L.P</span>
+                        </li>
+                        <li class="listaContact">
+                            <span class="infoCon"><i class="ri-phone-fill"></i></span>
+                            <p class="infoCon">(444) 841 5400 <br></p>
+                            <br>
+                            <p class="infoCon">(444) 121 6458</p>
+                        </li>
+                        <li class="listaContact">
+                            <span class="infoCon"><i class="ri-calendar-event-line"></i></span>
+                            <span class="infoCon">lunes a viernes de 10:00 am a 2:00 pm y de 4:00 pm a 8:00 pm, sábado de 10:00 am a 3:00 pm</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <div class="contenedorDerechos">
+            <p class="letraDerechos"> © 2023 SMYLIFE. TODOS LOS DERECHOS RESERVADOS</p>
+        </div>
+    </div>
+    <script src="JS/script.js"></script>
+
+</body>
+</html>
